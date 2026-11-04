@@ -61,6 +61,7 @@
             this.grpPropiedad.TabIndex = 0;
             this.grpPropiedad.TabStop = false;
             this.grpPropiedad.Text = "Registrar propiedad";
+            this.grpPropiedad.Enter += new System.EventHandler(this.grpPropiedad_Enter);
             // 
             // lblNombre
             // 
@@ -138,6 +139,7 @@
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // grpEliminar
             // 
@@ -175,6 +177,7 @@
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblListado
             // 
@@ -202,6 +205,7 @@
             this.dgvPropiedades.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPropiedades.Size = new System.Drawing.Size(705, 330);
             this.dgvPropiedades.TabIndex = 3;
+            this.dgvPropiedades.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPropiedades_CellContentClick);
             // 
             // Form1
             // 
@@ -217,6 +221,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión Inmobiliaria";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.grpPropiedad.ResumeLayout(false);
             this.grpPropiedad.PerformLayout();
             this.grpEliminar.ResumeLayout(false);
